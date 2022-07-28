@@ -1,1 +1,272 @@
+/* select all element - https://www.w3schools.com/cssref/css_selectors.asp */
+*{
+    box-sizing: border-box; /* https://www.w3schools.com/css/css3_box-sizing.asp */
+  }
+  
+  body{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  /* remove all anchor tag under-lines */
+  a{
+    text-decoration: none;
+  }
+  
+  header{
+    background: #566c2b;
+    display: flex;  /* to show header item in row */
+    align-items: center; /* to show everything of header in center */
+    padding: 10px 0;
+    position: sticky; /* to make header sticky - https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */
+    top: 0; /* to make header sticky */
+  }
+  
+  header ul{
+    /* list-style: none; */
+    display: flex; /* to show all header ul in one line */
+    /* ul me by default margine and padding aati hai
+    make it "0"*/
+    padding: 0;
+    margin: 0;
+  }
+  ul li{
+    list-style: none;
+  }
 
+  header a{
+    color: white;
+  }
+  
+  #logo{
+    margin: 0 auto; /* flex-box me left+right se auto dene se baki sab gap me a jata hai */
+    font-size: 25px;
+    color: white;
+  }
+  
+  /* padding in menu link */
+  #menu li{
+    padding: 10px;
+  }
+  
+  /* padding in social links */
+  #social-links li{
+    padding: 10px;
+  }
+
+  #main{
+    display: flex;
+  }
+  article{
+    padding: 10px;
+  }
+  .about-img{
+    display: flex;
+    margin: 0 0;
+    padding: 0;
+    width: 50%;
+    height: 10%;
+    
+
+  }
+  aside{
+    padding: 10px;
+    flex: 0 0 20vw; 
+    /* This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis. */
+    background: beige;
+  }
+
+  aside ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  aside ul a{
+    color: #566c2b;
+    padding: 10px;
+    display: block; 
+    /* anchor text ki property hai padding and margin dene ke liye block banana padta hai */
+    border-bottom: 1px solid grey;
+  }
+
+  aside img{
+    width: 100%;
+  }
+
+  .services-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .service-box{
+    border: 1px solid #eee;
+    flex-basis: 32%;
+    max-width: 370px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex; 
+    flex-direction: column;  
+  }
+
+  .service-img{
+    height: 100%;
+  }
+
+  .service-box img{
+    width: 100%;
+    height: 80%;
+  }
+
+  .service-box h3{
+    margin: 5px 0 10px;
+  }
+
+  .service-box p{
+    margin: 0 0 10px;
+  }
+
+  .call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+  }
+   
+  .call-to-action a{
+    background: gray;
+    border: 2px solid transparent;
+    color: white;
+    padding: 8px 13px;
+    display: block;
+  }
+
+  .call-to-action a:hover{
+    background: transparent;
+    color: gray;
+    border: 2px solid gray;
+  }    
+
+  footer{
+    background: #566c2b;
+    color: white;
+    text-align: left;
+    padding: 15px 0;
+  }
+  .footer_logo{
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer_logo p{
+    font-size: 25px;
+  }
+  .footer_container{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;    
+  }
+  .main_links h3{
+    margin-top: 15px !important;
+    margin-bottom: 0px;
+  }
+
+  .link_lists h3{
+    margin-bottom: 0px;
+    margin-top: -8px;
+  }
+  .link_lists ul li{
+    margin-bottom: 5px;
+    margin-left: -40px;
+  }
+  .news_letter h3 {
+    margin-bottom: 10px;
+  }
+  .news_letter input{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+
+  .icon_container{
+    display: flex;
+    gap: 15px;
+  }
+  
+  footer p{
+    text-align: center;
+    margin-bottom: auto;
+  }
+
+
+  .contact h2{
+    text-align: center;
+  }
+
+  /* .contact-img{
+    width: 100%;
+    height: 20%;
+  } */
+
+@media screen and (max-width: 850px){
+  header{
+    padding: 0 0;
+  }
+  .service-box{
+    flex-basis: 48%;
+  }
+  aside{
+    /* This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis. */
+    flex: 0 0 30vw;
+  }
+}  
+ 
+@media screen and (max-width: 600px){
+ header{
+  flex-direction: column;
+  padding: 0 0;
+ }
+ #logo{
+  order: -1;
+ }
+ #main{
+  flex-direction: column;
+ }
+ article{
+  order: -1;
+ }
+ .services-container{
+  flex-direction: column;
+  align-items: center;
+ }
+ h2{
+  text-align: center;
+ }
+ 
+}  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
