@@ -1,12 +1,12 @@
 # html-css-project
 
-# Project Name
+## Project Name
 * Herbal Tea Website
 
-# Hosted Link
+## Hosted Link
 * https://herbal-tea.netlify.app/
 
-# Features: 
+## Features: 
 * Responsive
 * Didderent Pages ex. About Contact-Us
 * Navigate to another to link Youtube Link etc.
