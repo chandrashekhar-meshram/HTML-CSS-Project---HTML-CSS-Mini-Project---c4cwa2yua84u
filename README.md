@@ -11,7 +11,7 @@
 * Didderent Pages ex. About Contact-Us
 * Navigate to another to link Youtube Link etc.
 
-# Tech Stack: 
+## Tech Stack: 
 * HTML
 * CSS.
 
