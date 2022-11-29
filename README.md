@@ -3,6 +3,9 @@
 ## Project Name
 * Herbal Tea Website
 
+## Description
+* Providing information about different types of Herble Tea
+
 ## Hosted Link
 * https://herbal-tea.netlify.app/
 
